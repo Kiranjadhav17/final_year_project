@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --main-color: #ffb43a;
+    --hover-color: hsl(37, 94%, 67%);
+    --body-color: white;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+    --red: #ff6b81;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline-color: all;border-width: 12px;
+    text-decoration: all;
+    text-transform: none;
+    transition: all  .2s linear;
+   
+    color: white !important;
+    
+}
+*::selection{
+    background: var(--red);
+    color: #fff;
+    text-align:center ;
+}
+
+iframe{
+    border: 2px solid red;
+}
+
+h4{
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    height:75px;
+    padding: 0px 50px;
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav .logo{
+    font-size: 25px;
+    font-weight: bold;
+    
+    color: antiquewhite;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav ul{
+   display: flex;
+}
+nav li{
+    
+    list-style: none;
+    margin: 0 15px;
+}
+nav li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    text-decoration: none;
+}
+nav li a:hover{
+    color:darksalmon;
+    transition: all;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--container-color);
+    padding: 10px 50px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    margin-top: 15px;
+    width: 100%;
+}
+.heading-title{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: space-between;
+}
+.popular-container{
+    width: 100%;
+}
+/* Movie box */
+.movie-box{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin-top: 35px;
+}
+.movie-box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-box .box-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: linear-gradient(
+        8deg,
+        hsl(240 17% 14% / 74%) 14%
+        hsl(240 17% 14% / 14%) 44%
+        );
+    overflow: hidden;
+}
+.movie-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.text-center{
+    margin-top: 30px;
+}
